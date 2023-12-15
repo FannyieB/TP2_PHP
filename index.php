@@ -1,6 +1,6 @@
 <?php
 require_once('Views/header.php');
-$req= $db->prepare('SELECT * FROM produits ');
+$req= $db->prepare('SELECT * FROM tooling ');
 $req->execute(array());
 $data = $req->fetchAll();
 ?>
@@ -20,17 +20,18 @@ $data = $req->fetchAll();
 	<p class="more"><a>Voir plus</a> ></p>
 </div>
 <div class="d-flex flex-row ">
-<?php foreach ($data as $k=>$v):
+<?php foreach ($data as $k=>$d):
 ?>
 <div class="card ms-2" style="width: 18rem;">
-	<img src="" class="card-img-top" alt="...">
+	<img src="img/products/metabo-pack-perceuse-visseuse-visseuse-a-choc-18v-4ah-685183000.webp" class="card-img-top" alt="raboteuse Metabo">
 	<div class="card-body">
-		<h5 class="card-title"><?= $v["name"]?></h5>
-		<p class="card-text"><?= $v["description"]?></p>
+		<h5 class="card-title"><?= $d["name"]?></h5>
+		<p class="card-text"><?= $d["description"]?></p>
 		<a href="#" class="btn btn-primary">Ajouter au panier</a>
-
 	</div>
 </div>
+
+
 
 <?php endforeach; ?>
 </div>
