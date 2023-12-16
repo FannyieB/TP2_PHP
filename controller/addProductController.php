@@ -12,6 +12,6 @@ $req->execute(array(
     "description" => htmlspecialchars($_POST['description']),
     "price_HT" => htmlspecialchars(intval($_POST['price_HT'])),
     "price_TTC" => htmlspecialchars(intval($_POST['price_TTC'])),
-    "image_path" => 'img/products/metabo-pack-perceuse-visseuse-visseuse-a-choc-18v-4ah-685183000.webp' // Remplacez cela par l'URL complète ou le chemin relatif de l'image
+    "image_path" => htmlspecialchars($_POST['image_path']),
 ));
 header('Location:../index.php');

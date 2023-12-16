@@ -25,6 +25,10 @@ require_once ('Views/header.php');
         <label for="exampleInputEmail1" class="form-label">tarif TTC</label>
         <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC">
     </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">choisir image</label>
+        <input type="file" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="image_path">
+    </div>
     <button type="submit" class="btn btn-primary">Submit</button>
    
 </form>

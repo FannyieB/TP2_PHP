@@ -14,6 +14,7 @@ $req ->execute(array(
     htmlspecialchars($_POST['description']),
     htmlspecialchars(intval($_POST['price_HT'])),
     htmlspecialchars(intval($_POST['tprice_TTC'])),
-    htmlspecialchars($_POST["id"])
+    htmlspecialchars($_POST["id"]),
+    htmlspecialchars($_POST["image_path"])
 ));
 header('Location:../index.php');
