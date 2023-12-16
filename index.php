@@ -23,11 +23,15 @@ $data = $req->fetchAll();
 <?php foreach ($data as $k=>$d):
 ?>
 <div class="card ms-2" style="width: 18rem;">
-	<img src="img/products/metabo-pack-perceuse-visseuse-visseuse-a-choc-18v-4ah-685183000.webp" class="card-img-top" alt="raboteuse Metabo">
-	<div class="card-body">
+<img src="<?= $d["image_path"] ?>" class="card-img-top" alt="<?= $d["name"] ?>">			
+		<div class="card-body">
 		<h5 class="card-title"><?= $d["name"]?></h5>
 		<p class="card-text"><?= $d["description"]?></p>
-		<a href="#" class="btn btn-primary">Ajouter au panier</a>
+		<p>Prix : <?=$d['price_HT'] ?> € HT <?=$d['price_TTC']?> €TTC</p>
+		<a href="#" class="btn btn-primary">Ajouter l'article au panier</a>
+        <a href="updateProduct.php?id=<?= $d['id'] ?>" class="btn btn-primary">Mettre à jour l'article</a>
+        <a href="controller/deleteProductController.php?id=<?= $d['id'] ?>" class="btn btn-danger">Supprimer l'article</a>
+		
 	</div>
 </div>
 

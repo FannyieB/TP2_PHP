@@ -8,7 +8,7 @@ $req->execute(array($_GET["id"]));
 $data= $req->fetchAll();
 //var_dump($data);
 ?>
-<form method="get" action="../controller/updateProductController.php">
+<form method="post" action="../controller/updateProductController.php">
     <input type="hidden" name="id" value=<?= $data[0]["id"] ?> />
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nom du produit</label>
@@ -24,11 +24,14 @@ $data= $req->fetchAll();
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">tarif TTC</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC" value=<?=$data[0]["price_TTC"] ?>>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_HT" value=<?=$data[0]["price_HT"] ?>>
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">tarif HT</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC" value=<?=$data[0]["price TTC"] ?>>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC" value=<?=$data[0]["price_TTC"] ?>>
     </div>
     <button type="submit" class="btn btn-primary">mettre à jour</button>
+
+    <!-- Ajout du bouton de suppression -->
+    <a href="../controller/deleteProductController.php?id=<?= $data[0]["id"] ?>" class="btn btn-danger">Supprimer le produit</a>
 </form>

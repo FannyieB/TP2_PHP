@@ -5,7 +5,7 @@ require_once ('Views/header.php');
 
 
 ?>
-<form method="post" action="../controller/addProduct.php">
+<form method="post" action="controller/addProductController.php">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nom du produit</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
@@ -18,12 +18,15 @@ require_once ('Views/header.php');
         </div>
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">tarif TTC</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tarif">
+        <label for="exampleInputEmail1" class="form-label">tarif HT</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_HT">
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">tarif HT</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tarifHT">
+        <label for="exampleInputEmail1" class="form-label">tarif TTC</label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC">
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+   
 </form>
+
+
