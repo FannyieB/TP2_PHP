@@ -34,4 +34,3 @@ $data = $req->fetchAll();
 
 
 <?php endforeach; ?>
-</div>

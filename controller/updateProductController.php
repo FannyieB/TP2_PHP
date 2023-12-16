@@ -2,7 +2,7 @@
 // dans cette page on gere l'action avec la base de donnée
 
 /*Ce fichier sert à mettre à jour une carte produit 
-selon les données du formulaire*/
+selon les données renseignée dans le formulaire*/
 
 require_once ('connect.php');
 
