@@ -8,12 +8,12 @@ require_once ('connect.php');
 
 var_dump($_POST);
 
-$req = $db->prepare('UPDATE produits SET name =?, description=?, tarif=? , tarifHT=? WHERE id=?');
+$req = $db->prepare('UPDATE tooling SET name =?, description=?, price_HT=? , price_TTC=? WHERE id=?');
 $req ->execute(array(
     htmlspecialchars($_POST['name']),
     htmlspecialchars($_POST['description']),
-    htmlspecialchars(intval($_POST['tarif'])),
-    htmlspecialchars(intval($_POST['tarifHT'])),
+    htmlspecialchars(intval($_POST['price_HT'])),
+    htmlspecialchars(intval($_POST['tprice_TTC'])),
     htmlspecialchars($_POST["id"])
 ));
 header('Location:../index.php');

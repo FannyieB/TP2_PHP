@@ -1,9 +1,9 @@
 <?php
 
-
 global $db;
-require_once('./controller/connect.php');
+require_once('controller/connect.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -10,8 +10,8 @@ $req = $db->prepare('INSERT INTO tooling (`name`, `description`, `price_HT`, `pr
 $req->execute(array(
     "name" => htmlspecialchars($_POST['name']),
     "description" => htmlspecialchars($_POST['description']),
-    "price HT" => htmlspecialchars(intval($_POST['price_HT'])),
-    "price TTC" => htmlspecialchars(intval($_POST['price_TTC']))
+    "price_HT" => htmlspecialchars(intval($_POST['price_HT'])),
+    "price_TTC" => htmlspecialchars(intval($_POST['price_TTC']))
 ));
 
 header('Location:../index.php');

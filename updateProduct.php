@@ -3,12 +3,12 @@
 
 require_once('Views/header.php');
 require_once ('controller/connect.php');
-$req = $db->prepare('SELECT * FROM produits WHERE id = ?');
+$req = $db->prepare('SELECT * FROM tooling WHERE id = ?');
 $req->execute(array($_GET["id"]));
 $data= $req->fetchAll();
 //var_dump($data);
 ?>
-<form method="get" action="controller/updateProductController.php">
+<form method="get" action="../controller/updateProductController.php">
     <input type="hidden" name="id" value=<?= $data[0]["id"] ?> />
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Nom du produit</label>
@@ -24,11 +24,11 @@ $data= $req->fetchAll();
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">tarif TTC</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tarif" value=<?=$data[0]["tarif"] ?>>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC" value=<?=$data[0]["price_TTC"] ?>>
     </div>
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">tarif HT</label>
-        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tarifHT" value=<?=$data[0]["tarifHT"] ?>>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC" value=<?=$data[0]["price TTC"] ?>>
     </div>
     <button type="submit" class="btn btn-primary">mettre à jour</button>
 </form>
