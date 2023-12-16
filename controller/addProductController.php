@@ -1,7 +1,7 @@
 <?php
 // dans cette page créer les actions pour la création de produit
 
-/* Ce fichier sert à insérer des valeurs dans la base de données.*/
+/* Ce fichier sert à insérer de nouvelles valeurs dans la base de données.*/
 
 
 require_once ('connect.php');
