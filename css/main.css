@@ -5,7 +5,7 @@
 
 /* définit la largeur des cartes à 80% */
 .card {
-    width: 80%;
+    width: 98%;
 }
 
 /* Paramétrage de la hauteur des cartes à la même valeur */
@@ -22,6 +22,7 @@
 
 .text-orange-dark {
     color: darkorange;
+    font-weight: bold;
 }
 
 .font-weight-extrabold {

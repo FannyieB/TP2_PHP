@@ -32,7 +32,7 @@ $data = $req->fetchAll();
                     <p class="card-text"><?= $d["description"]?></p>
                     <p class="price">
                         Prix : 
-                        <span class="price-ht"><?= $d['price_HT'] ?> € HT</span>
+                        <span class="price-ht"><?= $d['price_HT'] ?> €HT</span>
                         <span class="price-ttc text-orange-dark"><?= $d['price_TTC']?> €TTC</span>
                     </p>
 
