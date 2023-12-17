@@ -22,7 +22,7 @@ $data = $req->fetchAll();
 
 <h2>NOS AUTRES CATÉGORIES "PERCEUSE"</h2>
 
-<div class="d-flex flex-row ">
+<div class="d-flex flex-wrap ">
 	<?php foreach ($data as $k=>$d):
 	?>
 	<div class="col-md-4 mb-4">
