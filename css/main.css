@@ -3,6 +3,27 @@
 }
 
 
-button {
-    margin :50px 0;
+/* définit la largeur des cartes à 80% */
+.card {
+    width: 80%;
+}
+
+/* Paramétrage de la hauteur des cartes à la même valeur */
+.card-body {
+    height: 400px; 
+    overflow: hidden; 
+}
+
+/* Contenu redimensionné à l'intérieur des cartes */
+.custom-image {
+    width: 100%;
+    height: auto;
+}
+
+.text-orange-dark {
+    color: darkorange;
+}
+
+.font-weight-extrabold {
+    font-weight: 800; 
 }

@@ -18,11 +18,11 @@ require_once ('Views/header.php');
         </div>
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">tarif HT</label>
+        <label for="exampleInputEmail1" class="form-label">prix HT</label>
         <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_HT">
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">tarif TTC</label>
+        <label for="exampleInputEmail1" class="form-label">prix TTC</label>
         <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC">
     </div>
     <div class="mb-3">
