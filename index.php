@@ -26,9 +26,9 @@ $data = $req->fetchAll();
 	<?php foreach ($data as $k=>$d):
 	?>
 	<div class="col-md-4 mb-4">
-	<div class="card ms-2" style="width: 18rem;">
+	<div class="card ms-2" style="width: 100%;">
 		<img src="<?= $d["image_path"] ?>" class="card-img-top" alt="<?= $d["name"] ?>">			
-		<div class="card-body">
+		<div class="card-body" p-5>
 			<h5 class="card-title"><?= $d["name"]?></h5>
 			<p class="card-text"><?= $d["description"]?></p>
 			<p>Prix : <?=$d['price_HT'] ?> € HT <?=$d['price_TTC']?> €TTC</p>
