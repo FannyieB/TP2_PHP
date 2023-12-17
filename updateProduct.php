@@ -37,11 +37,3 @@ $data= $req->fetchAll();
 </form>
 
 
-<div class="mb-3">
-    <label for="product" class="form-label">Nom du produit</label>
-    <select class="form-control" id="product" name="product">
-        <option value="produit1">Produit 1</option>
-        <option value="produit2">Produit 2</option>
-        <!-- Ajoutez les autres produits de votre liste -->
-    </select>
-</div>

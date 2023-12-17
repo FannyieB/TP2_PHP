@@ -4,17 +4,15 @@
 /*Ce fichier sert à mettre à jour une carte produit 
 selon les données renseignée dans le formulaire*/
 
-require_once ('connect.php');
-
-var_dump($_POST);
+require_once('connect.php');
 
 $req = $db->prepare('UPDATE tooling SET name =?, description=?, price_HT=? , price_TTC=? WHERE id=?');
-$req ->execute(array(
+$req->execute(array(
     htmlspecialchars($_POST['name']),
     htmlspecialchars($_POST['description']),
     htmlspecialchars(intval($_POST['price_HT'])),
-    htmlspecialchars(intval($_POST['tprice_TTC'])),
+    htmlspecialchars(intval($_POST['price_TTC'])),
     htmlspecialchars($_POST["id"]),
-    htmlspecialchars($_POST["image_path"])
 ));
+
 header('Location:../index.php');
