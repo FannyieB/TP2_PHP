@@ -19,19 +19,23 @@ $data = $req->fetchAll();
 	</p>
 	<p class="more"><a>Voir plus</a> ></p>
 </div>
+
+<h2>NOS AUTRES CATÉGORIES "PERCEUSE"</h2>
+
 <div class="d-flex flex-row ">
-<?php foreach ($data as $k=>$d):
-?>
-<div class="card ms-2" style="width: 18rem;">
-<img src="<?= $d["image_path"] ?>" class="card-img-top" alt="<?= $d["name"] ?>">			
+	<?php foreach ($data as $k=>$d):
+	?>
+	<div class="col-md-4 mb-4">
+	<div class="card ms-2" style="width: 18rem;">
+		<img src="<?= $d["image_path"] ?>" class="card-img-top" alt="<?= $d["name"] ?>">			
 		<div class="card-body">
-		<h5 class="card-title"><?= $d["name"]?></h5>
-		<p class="card-text"><?= $d["description"]?></p>
-		<p>Prix : <?=$d['price_HT'] ?> € HT <?=$d['price_TTC']?> €TTC</p>
-		<a href="#" class="btn btn-primary">Ajouter l'article au panier</a>
-        <a href="updateProduct.php?id=<?= $d['id'] ?>" class="btn btn-primary">Mettre à jour l'article</a>
-        <a href="controller/deleteProductController.php?id=<?= $d['id'] ?>" class="btn btn-danger">Supprimer l'article</a>
-		
+			<h5 class="card-title"><?= $d["name"]?></h5>
+			<p class="card-text"><?= $d["description"]?></p>
+			<p>Prix : <?=$d['price_HT'] ?> € HT <?=$d['price_TTC']?> €TTC</p>
+			<a href="#" class="btn btn-primary">Ajouter l'article au panier</a>
+			<a href="updateProduct.php?id=<?= $d['id'] ?>" class="btn btn-primary">Mettre à jour l'article</a>
+			<a href="controller/deleteProductController.php?id=<?= $d['id'] ?>" class="btn btn-danger">Supprimer l'article</a>
+		</div>
 	</div>
 </div>
 

@@ -30,7 +30,7 @@ $data= $req->fetchAll();
         <label for="exampleInputEmail1" class="form-label">tarif HT</label>
         <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="price_TTC" value=<?=$data[0]["price_TTC"] ?>>
     </div>
-    <button type="submit" class="btn btn-primary">mettre à jour</button>
+    <button type="submit" class="btn btn-primary">mettre à jour l'article</button>
 
     <!-- Ajout du bouton de suppression -->
     <a href="../controller/deleteProductController.php?id=<?= $data[0]["id"] ?>" class="btn btn-danger">Supprimer le produit</a>
