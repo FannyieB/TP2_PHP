@@ -20,8 +20,9 @@ $data = $req->fetchAll();
 	<p class="more"><a>Voir plus</a> ></p>
 </div>
 
-<h2>NOS AUTRES CATÉGORIES "PERCEUSE"</h2>
+<h3>NOS AUTRES CATÉGORIES "PERCEUSE"</h3>
 
+/* Personnalisation de la carte produit avec de nouveaux paramètres bootstrap */
 <<div class="row row-cols-1 row-cols-md-3 g-4">
     <?php foreach ($data as $k=>$d): ?>
         <div class="col-md-4 mb-4">
