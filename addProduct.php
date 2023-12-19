@@ -13,7 +13,7 @@ require_once ('Views/header.php');
     <div class="mb-3">
         <div class="form-floating">
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="description"></textarea>
-            <label for="floatingTextarea2">Description  </label>
+            <label for="floatingTextarea2">Description</label>
         </div>
     </div>
     <div class="mb-3">

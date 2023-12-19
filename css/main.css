@@ -5,7 +5,7 @@
 
 /* définit la largeur des cartes à 80% */
 .card {
-    width: 98%;
+    width: 85%;
 }
 
 /* Paramétrage de la hauteur des cartes à la même valeur */
@@ -16,7 +16,7 @@
 
 /* Contenu redimensionné à l'intérieur des cartes */
 .custom-image {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
