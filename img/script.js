@@ -1,7 +1,8 @@
 /*
+Fichier non pris en compte
     Sélectionne la liste déroulante
     Écoute l'événement dans la liste déroulante
-*/
+
 const productDropdown = document.getElementById('product');
 
 productDropdown.addEventListener('change', function() {
@@ -17,3 +18,5 @@ productDropdown.addEventListener('change', function() {
     // Mets à jour l'image 
     document.getElementById('productImage').src = productInfo.image_path;
 });
+
+*/

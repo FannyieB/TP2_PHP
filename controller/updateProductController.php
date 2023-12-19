@@ -1,5 +1,5 @@
 <?php
-// dans cette page on gere l'action avec la base de donnée
+// dans cette page on gère l'action avec la base de données
 
 /*Ce fichier sert à mettre à jour une carte produit 
 selon les données renseignée dans le formulaire*/
@@ -12,6 +12,7 @@ $req->execute(array(
     htmlspecialchars($_POST['description']),
     htmlspecialchars(intval($_POST['price_HT'])),
     htmlspecialchars(intval($_POST['price_TTC'])),
+    htmlspecialchars($_POST['image_path']),
     htmlspecialchars($_POST["id"]),
 ));
 
