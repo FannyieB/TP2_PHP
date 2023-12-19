@@ -10,13 +10,16 @@ $data= $req->fetchAll();
 
 ?>
 <form method="post" action="controller/addProductController.php">
- 
-    <input type="hidden" name="id" value=<?= $data[0]["id"] ?> />
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nom du produit</label>
-        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name" value=<?=$data[0]["name"]?>>
-    </div>
 
+    <div class="mb-3">
+        <label for="productList" class="form-label">Sélectionnez un produit</label>
+        <select>
+            <option value="1">HIKOKI Perceuse visseuse percussion 18V 5Ah - DV18DBSL WJZ</option>
+            <option value="2">MILWAUKEE Pack 6 outils 18V 2x5Ah - M18 FPP6K2-502B</option>
+            <option value="3">HIKOKI Perceuse visseuse percu 18V 5Ah DV18DBSL +100 Acc.</option>
+            <option value="4">BOSCH Perfo GBH18V-21 + Visseuse GSR18V-28 plus 2x4Ah</option>            
+        </select>
+    </div> 
    
     <div class="mb-3">
         <div class="form-floating">
@@ -35,7 +38,7 @@ $data= $req->fetchAll();
     <button type="submit" class="btn btn-primary btn-dark mb-2 w-40">mettre à jour l'article</button>
 
     <!-- Ajout du bouton de suppression -->
-    <a href="../controller/deleteProductController.php?id=<?= $data[0]["id"] ?>" class="btn btn-danger">Supprimer le produit</a>
+    <a href="../controller/deleteProductController.php?id=<?= $data[0]["id"] ?>" class="btn btn-danger">Supprimer l'article</a>
 </form>
 
 
